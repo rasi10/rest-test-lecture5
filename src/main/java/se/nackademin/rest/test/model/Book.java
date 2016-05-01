@@ -2,23 +2,38 @@ package se.nackademin.rest.test.model;
 
 
 public class Book {
-    private int id;
+    private Object author;
+    private Integer id;
     private String description;
-    private int numberOfPages;
+    private Integer numberOfPages;
     private String title;
     private String isbn;
 
     /**
+     * @return the author
+     */
+    public Object getAuthor() {
+        return author;
+    }
+
+    /**
+     * @param author the author to set
+     */
+    public void setAuthor(Object author) {
+        this.author = author;
+    }
+
+    /**
      * @return the id
      */
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
     /**
      * @param id the id to set
      */
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -39,14 +54,14 @@ public class Book {
     /**
      * @return the numberOfPages
      */
-    public int getNumberOfPages() {
+    public Integer getNumberOfPages() {
         return numberOfPages;
     }
 
     /**
      * @param numberOfPages the numberOfPages to set
      */
-    public void setNumberOfPages(int numberOfPages) {
+    public void setNumberOfPages(Integer numberOfPages) {
         this.numberOfPages = numberOfPages;
     }
 
@@ -77,6 +92,8 @@ public class Book {
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
+
+   
     
     
 }
